@@ -11,6 +11,8 @@
   "license": "ISC",
   "devDependencies": {
     "jest": "^26.6.3",
+    "jest-extended": "^0.11.5",
+    "mock-express-response": "^0.3.0",
     "nodemon": "^2.0.7"
   },
   "dependencies": {
