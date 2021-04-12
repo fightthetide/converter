@@ -21,15 +21,11 @@ happyPathScenarios.forEach((scenario) => {
 });
 
 // Unhappy path
-let errorResponse = {
-  error: "Error: [DecimalError] Invalid argument: undefined"
-}
-
 const unhappyScenarios = {
   'Bad from unit': { qty: 1, fromUnit: 'loud', toUnit: 'cup'},
   'Bad to unit': { qty: 1, fromUnit: 'cup', toUnit: 'loud' },
   'Bad quantity': { qty: 'one', fromUnit: 'ounce', toUnit: 'cup' }
-}
+};
 
 for(let scenarioLabel in unhappyScenarios) {
   let scenario = unhappyScenarios[scenarioLabel];

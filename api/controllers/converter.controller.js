@@ -1,8 +1,6 @@
 'use strict';
 
 const Decimal = require('decimal.js');
-const { response } = require('express');
-
 const unitLegend = {
   ounce: 29.5735,
   cup: 236.588,
@@ -24,5 +22,5 @@ exports.convert = function(req, res) {
       error: `${error.name}: ${error.message}`,
       parameters: req.params
     });
-  }
+  };
 };
