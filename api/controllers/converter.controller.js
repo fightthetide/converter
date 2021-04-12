@@ -1,6 +1,6 @@
 'use strict';
 
-const Decimal = require('decimal');
+const Decimal = require('decimal.js');
 
 const unitLegend = {
   ounce: 29.5735,
@@ -13,5 +13,5 @@ exports.convert = function(req, res) {
   return new Decimal(unitLegend[params.fromUnit])
     .mul(params.qty)
     .div(unitLegend[params.toUnit])
-    .toNumber();
+    .toFixed(3);
 };
